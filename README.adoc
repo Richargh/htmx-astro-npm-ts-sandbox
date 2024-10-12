@@ -1,0 +1,17 @@
+= Astro + Htmx (Sandbox)
+
+== Features
+
+* link:https://htmx.org/[Htmx]
+* link:https://astro.build/[Astro]
+* TypeScript
+
+== Preconditions
+
+* Install the node version from link:.nvmrc[] via link:https://github.com/Schniz/fnm[fnm] (or link:https://github.com/nvm-sh/nvm[nvm]]) by calling `fnm use`
+
+== Created via
+
+* `npm create astro@latest`
+* `npm i htmx.org` and in Layout.astro add `<script src="htmx.org/dist/htmx.min.js"></script>`
+* `npm i @picocss/pico` and in Layout.astro add `<script src="htmx.org/dist/htmx.min.js"></script>`
