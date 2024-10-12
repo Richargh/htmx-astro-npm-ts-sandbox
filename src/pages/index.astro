@@ -1,9 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import store from "../lib/store";
+
+const name = "Steve";
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<h1>Welcome to Astro + Htmx</h1>
+
+		Hello {name} <br>
+
+		<button
+			hx-post="/partials/clicked/"
+		>
+			Click Me!
+		</button>
 	</main>
 </Layout>

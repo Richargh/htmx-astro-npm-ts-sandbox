@@ -10,8 +10,37 @@
 
 * Install the node version from link:.nvmrc[] via link:https://github.com/Schniz/fnm[fnm] (or link:https://github.com/nvm-sh/nvm[nvm]]) by calling `fnm use`
 
+== Usage
+
+* Start local dev server at `localhost:4321` -> `npm run dev`
+* Build production site -> `npm run build`
+
+== Project Structure
+
+----
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+|       ├── partials/
+│       └── index.astro
+└── package.json
+----
+
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name. `src/pages/partials` is a folder into which we can put partial pages by convention.
+
+There's nothing special about `src/components/` or `src/lib`.
+
 == Created via
 
 * `npm create astro@latest`
 * `npm i htmx.org` and in Layout.astro add `<script src="htmx.org/dist/htmx.min.js"></script>`
-* `npm i @picocss/pico` and in Layout.astro add `<script src="htmx.org/dist/htmx.min.js"></script>`
+* `npm i @picocss/pico` and in Layout.astro `import '@picocss/pico/css/pico.classless.css'`
+
+== Further references
+
+* Check out the link:https://ahastack.dev/[AHA Stack]
